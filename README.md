@@ -8,44 +8,34 @@ Music streaming player with on-device stem isolation, synchronized live karaoke 
 
 ---
 
-## Showcase Carousel
+## Interface Showcase
 
-<div align="center">
-  <img src=".github/assets/stemkara_carousel.gif" alt="Stemkara Application Carousel Tour" width="95%" />
-  <p><i>Continuous tour: Home Dashboard &bull; Live Karaoke &bull; Artist Discography &bull; Library Hub</i></p>
-</div>
-
-<details open>
-  <summary><b>Home Dashboard & Studio Superpowers</b> &mdash; Quick access to 4-channel stem separation, live karaoke mode, and personalized suggested playlists.</summary>
-  <br />
-  <p align="center">
-    <img src=".github/assets/screenshot_home.png" alt="Home Dashboard & Studio Superpowers" width="95%" />
-  </p>
-</details>
-
-<details>
-  <summary><b>Real-Time Synced Lyrics & Live Karaoke</b> &mdash; Word-by-word synchronized scrolling, pitch guides, Romanization, and full-screen visualizer.</summary>
-  <br />
-  <p align="center">
-    <img src=".github/assets/screenshot_lyrics.png" alt="Real-Time Synced Lyrics & Live Karaoke" width="95%" />
-  </p>
-</details>
-
-<details>
-  <summary><b>Artist Catalog & Streaming Discography</b> &mdash; Rich discography views with monthly listener stats, verified artist badges, and instant shuffle.</summary>
-  <br />
-  <p align="center">
-    <img src=".github/assets/screenshot_artist.png" alt="Artist Catalog & Streaming Discography" width="95%" />
-  </p>
-</details>
-
-<details>
-  <summary><b>Library Hub & Offline Stem Storage</b> &mdash; Categorized cards for Liked Songs, Recently Played, Offline Stems, and Curated Radio Stations.</summary>
-  <br />
-  <p align="center">
-    <img src=".github/assets/screenshot_library.png" alt="Personal Library & Offline Stem Storage" width="95%" />
-  </p>
-</details>
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3 align="center">Studio Superpowers</h3>
+      <p align="center"><i>On-device 4-channel stem separation, live karaoke shortcuts, and curated playlist discovery.</i></p>
+      <a href=".github/assets/screenshot_home.png"><img src=".github/assets/screenshot_home.png" width="100%" alt="Home Dashboard & Studio Superpowers" /></a>
+    </td>
+    <td width="50%" valign="top">
+      <h3 align="center">Live Karaoke & Synced Lyrics</h3>
+      <p align="center"><i>Real-time word-by-word lyric scrolling, pitch guides, Romanization, and fullscreen visualizer.</i></p>
+      <a href=".github/assets/screenshot_lyrics.png"><img src=".github/assets/screenshot_lyrics.png" width="100%" alt="Real-Time Synced Lyrics & Live Karaoke" /></a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3 align="center">Artist Catalog & Top Songs</h3>
+      <p align="center"><i>Verified artist discographies, monthly listener statistics, popular tracks, and instant shuffle.</i></p>
+      <a href=".github/assets/screenshot_artist.png"><img src=".github/assets/screenshot_artist.png" width="100%" alt="Artist Catalog & Streaming Discography" /></a>
+    </td>
+    <td width="50%" valign="top">
+      <h3 align="center">Personal Library & Offline Cache</h3>
+      <p align="center"><i>Categorized collections for Liked Songs, Recently Played, Offline Stems, and curated Radio Stations.</i></p>
+      <a href=".github/assets/screenshot_library.png"><img src=".github/assets/screenshot_library.png" width="100%" alt="Personal Library & Offline Stem Storage" /></a>
+    </td>
+  </tr>
+</table>
 
 ---
 

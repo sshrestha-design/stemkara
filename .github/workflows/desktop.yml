@@ -86,7 +86,7 @@ jobs:
       - name: Release desktop bundle
         uses: svenstaro/upload-release-action@v2
         with:
-          repo_name: gokadzev/Musify
+          repo_name: sshrestha-design/stemkara
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           file: ${{ matrix.artifact }}
           asset_name: Musify-${{ matrix.platform }}-x64.${{ matrix.platform == 'linux' && 'tar.gz' || 'zip' }}

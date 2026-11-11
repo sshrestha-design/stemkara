@@ -1,6 +1,6 @@
 # Stemkara
 
-Music streaming player with on-device stem isolation, synchronized live karaoke lyrics, and a native macOS desktop interface.
+Pure open source music streaming for macOS. No ads, no subscriptions, live synchronized lyrics, karaoke mode, and built-in studio controls.
 
 [![macOS](https://img.shields.io/badge/Platform-macOS%20%7C%20Android-black?logo=apple&logoColor=white)](https://github.com/sshrestha-design/stemkara/releases)
 [![Release](https://img.shields.io/badge/Release-v1.0.0-red?logo=github)](https://github.com/sshrestha-design/stemkara/releases/latest)

@@ -21,6 +21,7 @@ import 'package:material_ui/material_ui.dart';
 import 'package:musify/constants/app_constants.dart';
 import 'package:musify/constants/version.dart';
 import 'package:musify/extensions/l10n.dart';
+import 'package:musify/utilities/url_launcher.dart';
 import 'package:musify/widgets/mini_player_bottom_space.dart';
 
 class AboutPage extends StatelessWidget {
@@ -137,6 +138,27 @@ class AboutPage extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 16),
+            ListTile(
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(16),
+              ),
+              tileColor: colorScheme.surfaceContainerLow,
+              leading: Icon(
+                FluentIcons.branch_fork_24_regular,
+                color: colorScheme.primary,
+              ),
+              title: const Text(
+                'Upstream Project',
+                style: TextStyle(fontWeight: FontWeight.w600, fontSize: 15),
+              ),
+              subtitle: const Text(
+                'Derivative work of Musify by Valeri Gokadze (GPL-3.0)',
+                style: TextStyle(fontSize: 12),
+              ),
+              trailing: const Icon(FluentIcons.open_24_regular),
+              onTap: () => launchURL(Uri.parse('https://github.com/gokadzev/Musify')),
+            ),
+            const SizedBox(height: 12),
             ListTile(
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(16),

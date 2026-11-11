@@ -125,6 +125,18 @@ The compiled macOS bundle outputs to:
 
 ---
 
+## Lineage & Derivative Work Notice
+
+Stemkara is an open source derivative work based on [Musify](https://github.com/gokadzev/Musify) created by [Valeri Gokadze](https://github.com/gokadzev), distributed under the terms of the [GNU General Public License v3.0 (GPL-3.0)](https://www.gnu.org/licenses/gpl-3.0).
+
+We gratefully acknowledge Valeri Gokadze and all upstream Musify contributors for establishing the original streaming audio foundation. Stemkara builds upon and diverges from that foundation with:
+- Native macOS desktop experience with translucent UI panels, responsive layout, and global media key integration
+- On-device 4-channel neural stem isolation (Vocals, Drums, Bass, Instruments) and multi-track mixing console
+- Real-time synchronized karaoke lyrics with phonetic Romaji guides and pitch tracking
+- Decoupled application identifiers, isolated user storage, and performance optimizations
+
+---
+
 ## License
 
 ```

@@ -17,7 +17,7 @@ struct MusifyTimelineProvider: TimelineProvider {
     typealias Entry = MusifyEntry
 
     private var sharedContainerURL: URL? {
-        FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "group.com.gokadzev.musify")
+        FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "group.com.stemkara.app")
     }
 
     private func readCurrentEntry() -> MusifyEntry {

@@ -13,7 +13,7 @@ class MacOSMediaControls {
     required this.canGoPrevious,
     this.navigationChanges,
     this.resolveArtwork,
-    this.channel = const MethodChannel('com.gokadzev.musify/macos_media_controls'),
+    this.channel = const MethodChannel('com.stemkara.app/macos_media_controls'),
   });
 
   final void Function(Object error, StackTrace stackTrace) onError;

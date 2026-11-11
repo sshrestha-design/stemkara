@@ -26,7 +26,7 @@ else
 
   target.build_configurations.each do |config|
     config.build_settings['PRODUCT_NAME'] = 'MusifyWidget'
-    config.build_settings['PRODUCT_BUNDLE_IDENTIFIER'] = 'com.gokadzev.musify.MusifyWidget'
+    config.build_settings['PRODUCT_BUNDLE_IDENTIFIER'] = 'com.stemkara.app.MusifyWidget'
     config.build_settings['INFOPLIST_FILE'] = 'MusifyWidget/Info.plist'
     config.build_settings['CODE_SIGN_ENTITLEMENTS'] = 'MusifyWidget/MusifyWidget.entitlements'
     config.build_settings['SWIFT_VERSION'] = '5.0'

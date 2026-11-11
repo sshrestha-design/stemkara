@@ -9,7 +9,7 @@ class MacOSMediaControls: NSObject {
   private var isInitialized = false
 
   func setup(with messenger: FlutterBinaryMessenger) {
-    channel = FlutterMethodChannel(name: "com.gokadzev.musify/macos_media_controls", binaryMessenger: messenger)
+    channel = FlutterMethodChannel(name: "com.stemkara.app/macos_media_controls", binaryMessenger: messenger)
     channel?.setMethodCallHandler { [weak self] (call, result) in
       self?.handle(call, result: result)
     }
@@ -125,7 +125,7 @@ class MacOSMediaControls: NSObject {
 @main
 class AppDelegate: FlutterAppDelegate {
   override func applicationWillFinishLaunching(_ notification: Notification) {
-    let bundleID = Bundle.main.bundleIdentifier ?? "com.gokadzev.musify"
+    let bundleID = Bundle.main.bundleIdentifier ?? "com.stemkara.app"
     let runningApps = NSRunningApplication.runningApplications(withBundleIdentifier: bundleID)
     let currentPID = ProcessInfo.processInfo.processIdentifier
 
@@ -160,7 +160,7 @@ class AppDelegate: FlutterAppDelegate {
     if let messenger = controller?.engine.binaryMessenger {
       MacOSMediaControls.shared.setup(with: messenger)
 
-      let channel = FlutterMethodChannel(name: "com.gokadzev.musify/widget", binaryMessenger: messenger)
+      let channel = FlutterMethodChannel(name: "com.stemkara.app/widget", binaryMessenger: messenger)
       channel.setMethodCallHandler { call, result in
         if call.method == "reloadWidget" {
           if #available(macOS 11.0, *) {

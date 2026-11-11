@@ -18,7 +18,7 @@ fi
 data_home=${XDG_DATA_HOME:-"$HOME/.local/share"}
 applications_dir="$data_home/applications"
 icons_dir="$data_home/icons/hicolor/96x96/apps"
-desktop_file="$applications_dir/com.gokadzev.musify.desktop"
+desktop_file="$applications_dir/com.stemkara.app.desktop"
 temporary_desktop_file="$desktop_file.tmp.$$"
 
 mkdir -p "$applications_dir" "$icons_dir"
@@ -35,7 +35,7 @@ trap 'rm -f "$temporary_desktop_file"' 0 HUP INT TERM
   printf 'Terminal=false\n'
   printf 'Type=Application\n'
   printf 'Categories=AudioVideo;Audio;Player;\n'
-  printf 'StartupWMClass=com.gokadzev.musify\n'
+  printf 'StartupWMClass=com.stemkara.app\n'
 } > "$temporary_desktop_file"
 chmod 644 "$temporary_desktop_file"
 mv -f "$temporary_desktop_file" "$desktop_file"

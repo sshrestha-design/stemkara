@@ -1,8 +1,8 @@
 name: musify
 description: Stemkara - AI Stem Separation & Karaoke Music Player
-homepage: https://github.com/gokadzev/Musify
-repository: https://github.com/gokadzev/Musify
-issue_tracker: https://github.com/gokadzev/Musify/issues
+homepage: https://github.com/sshrestha-design/stemkara
+repository: https://github.com/sshrestha-design/stemkara
+issue_tracker: https://github.com/sshrestha-design/stemkara/issues
 
 publish_to: 'none'
 version: 10.6.0+186 # run update.sh after changing the version

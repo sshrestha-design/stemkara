@@ -6,6 +6,12 @@ Pure open source music streaming for macOS. No ads, no subscriptions, live synch
 [![Release](https://img.shields.io/badge/Release-v1.0.0-red?logo=github)](https://github.com/sshrestha-design/stemkara/releases/latest)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
+<br />
+
+<p align="center">
+  <img src=".github/assets/hero.png" width="100%" alt="Stemkara - Your Ultimate Music & Stem Isolation Player" />
+</p>
+
 ---
 
 ## Interface Showcase

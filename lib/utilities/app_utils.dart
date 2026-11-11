@@ -20,6 +20,7 @@ import 'package:intl/intl.dart';
 import 'package:material_ui/material_ui.dart';
 import 'package:musify/constants/app_constants.dart';
 import 'package:musify/services/settings_manager.dart';
+import 'package:musify/utilities/platform_utils.dart';
 import 'package:youtube_explode_dart/youtube_explode_dart.dart';
 
 BorderRadius getItemBorderRadius(
@@ -150,6 +151,14 @@ int _audioOnlyCompatibilityScore(AudioOnlyStreamInfo stream) {
   final container = stream.container.name.toLowerCase();
 
   if (_isDolbyCodec(codec)) {
+    return 0;
+  }
+
+  // iOS native AVPlayer cannot decode WebM or Opus audio containers.
+  if (isIosPlatform &&
+      (container == 'webm' ||
+          codec.contains('opus') ||
+          codec.contains('vorbis'))) {
     return 0;
   }
 

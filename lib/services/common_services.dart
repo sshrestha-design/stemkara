@@ -35,6 +35,7 @@ import 'package:musify/services/settings_manager.dart';
 import 'package:musify/utilities/app_utils.dart';
 import 'package:musify/utilities/formatter.dart';
 import 'package:musify/utilities/map_utils.dart';
+import 'package:musify/utilities/platform_utils.dart';
 import 'package:youtube_explode_dart/youtube_explode_dart.dart';
 
 List globalSongs = [];
@@ -760,7 +761,13 @@ Future<String?> fetchSongStreamUrl(String songId, bool isLive) async {
     // Try to get from cache
     final cachedUrl = await _getCachedSongUrl(songId, cacheKey, _cacheDuration);
     if (cachedUrl != null) {
-      return cachedUrl;
+      if (isIosPlatform &&
+          (cachedUrl.contains('mime=audio%2Fwebm') ||
+              cachedUrl.contains('webm'))) {
+        await invalidateSongStreamCache(songId);
+      } else {
+        return cachedUrl;
+      }
     }
 
     // Get fresh URL, reusing the stream already resolved for this song.
